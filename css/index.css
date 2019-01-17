@@ -183,6 +183,11 @@ img {
   align-items: center;
   padding: 20px 0;
 }
+@media (max-width: 800px) {
+  .main-header h1 {
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 500px) {
   .main-header h1 {
     padding-bottom: 20px;
@@ -194,6 +199,11 @@ img {
   justify-content: space-evenly;
   align-items: center;
   max-width: 100%;
+}
+@media (max-width: 800px) {
+  .main-header nav {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .main-header nav {
@@ -213,6 +223,12 @@ img {
 @media (max-width: 500px) {
   .main-header nav a {
     font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .main-header {
+    flex-direction: column;
+    max-width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -240,6 +256,11 @@ img {
 .home .top-content .main-image {
   margin-bottom: 20px;
 }
+@media (max-width: 800px) {
+  .home .top-content {
+    margin: 20px;
+  }
+}
 @media (max-width: 500px) {
   .home .top-content {
     margin: 20px;
@@ -250,6 +271,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .home .content-section {
+    margin: 20px;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -300,6 +326,12 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .home .content-destination {
+    margin: 20px 0 20px 20px;
+  }
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -326,9 +358,15 @@ img {
     margin: 20px 40px;
   }
 }
+@media (max-width: 800px) {
+  .home .content-pick {
+    max-width: 100%;
+    margin: 20px 20px;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick {
-    width: 98%;
+    max-width: 100%;
   }
 }
 .home .btn {
@@ -348,6 +386,35 @@ img {
 .home .btn:hover {
   background-color: #FFFFFF;
   color: #17A2B8;
+}
+.home .btn:hover {
+  -webkit-animation: fade-in 0.5s linear infinite alternate;
+  -moz-animation: fade-in 0.5s linear infinite alternate;
+  animation: fade-in 0.5s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 500px) {
   .home .btn {

@@ -9,6 +9,8 @@
   border: 1px solid @button-bg;
   cursor: pointer;
   .custom-layout(center, center);
+  
+
 
   &:hover {
     background-color: @main-bg;
@@ -21,4 +23,16 @@
   flex-flow: row, wrap;
   justify-content: @justify;
   align-items: @align;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
 }
