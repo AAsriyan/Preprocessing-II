@@ -1,10 +1,26 @@
+//This page covers the H1 "Fun Bus" and Nav bar in the header
+
+@tablet: ~"(max-width: 800px)";
+@mobile: ~"(max-width: 500px)";
+
 .main-header {
   .custom-layout(space-between, center);
   padding: 20px 0;
 
+  h1 {
+    @media @mobile {
+      padding-bottom: 20px;;
+    }
+  }
+
   nav {
     .custom-layout(space-evenly, center);
     max-width: 100%;
+
+    @media @mobile {
+      width: 100%;
+      .custom-layout(space-evenly, center);
+    }
   }
 
   nav a {
@@ -12,5 +28,14 @@
     text-decoration-line: none;
     font-size: 1.5rem;
     color: @font-color;
+
+    //***Mobile***//
+    @media @mobile {
+      font-size: 2rem;
+    }
+  }
+//***Mobile***//
+  @media @mobile {
+    flex-direction: column;
   }
 }
